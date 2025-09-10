@@ -1,4 +1,3 @@
-/* Futuristic enchanted background and sleek text */
 body {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #e0e0e0;
@@ -10,7 +9,6 @@ body {
   background-size: cover;
 }
 
-/* Headings with neon glow */
 h1,
 h2,
 h3 {
@@ -19,7 +17,6 @@ h3 {
   text-shadow: 0 0 8px rgba(128, 223, 255, 0.7);
 }
 
-/* Transform your name at the top — tech-magic pulse */
 h1 {
   font-size: 3.5rem;
   text-align: center;
@@ -40,7 +37,6 @@ h1 {
   }
 }
 
-/* Experience list items as holographic panels */
 .experience li {
   background: rgba(20, 20, 40, 0.7);
   margin: 15px 0;
@@ -58,7 +54,6 @@ h1 {
     inset 0 0 12px rgba(255, 255, 255, 0.2);
 }
 
-/* Links — glowing circuits */
 a {
   color: #80dfff;
   text-decoration: none;
