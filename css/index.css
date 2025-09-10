@@ -1,0 +1,100 @@
+/* Futuristic enchanted background and sleek text */
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #e0e0e0;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Headings with neon glow */
+h1,
+h2,
+h3 {
+  color: #80dfff;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(128, 223, 255, 0.7);
+}
+
+/* Transform your name at the top — tech-magic pulse */
+h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #ff4081;
+  letter-spacing: 2px;
+  margin-top: 40px;
+  animation: pulseGlow 3s infinite alternate;
+}
+
+@keyframes pulseGlow {
+  from {
+    text-shadow: 0 0 8px rgba(255, 64, 129, 0.5),
+      0 0 16px rgba(255, 64, 129, 0.4);
+  }
+  to {
+    text-shadow: 0 0 16px rgba(255, 64, 129, 0.9),
+      0 0 32px rgba(255, 64, 129, 0.7);
+  }
+}
+
+/* Experience list items as holographic panels */
+.experience li {
+  background: rgba(20, 20, 40, 0.7);
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.2),
+    inset 0 0 8px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(128, 223, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5),
+    inset 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Links — glowing circuits */
+a {
+  color: #80dfff;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff4081;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #80dfff, #ff4081);
+  left: 0;
+  bottom: -3px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.Profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 0 15px rgba(128, 223, 255, 0.7);
+}
