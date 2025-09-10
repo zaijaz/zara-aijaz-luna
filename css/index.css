@@ -93,3 +93,30 @@ a:hover::after {
   margin: 20px auto;
   box-shadow: 0 0 15px rgba(128, 223, 255, 0.7);
 }
+
+/* experience section layout */
+#Experience ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#Experience li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgba(20, 20, 40, 0.7);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Connect section layout */
+#Connect ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+#Connect li {
+}
