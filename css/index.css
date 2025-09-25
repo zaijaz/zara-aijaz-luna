@@ -1,3 +1,4 @@
+/* Base */
 body {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #e0e0e0;
@@ -94,7 +95,7 @@ a:hover::after {
   box-shadow: 0 0 15px rgba(128, 223, 255, 0.7);
 }
 
-/* experience section layout */
+/* Experience */
 #Experience ul {
   display: flex;
   flex-direction: column;
@@ -110,7 +111,7 @@ a:hover::after {
   border-radius: 8px;
 }
 
-/* Connect section layout */
+/* Connect */
 #Connect ul {
   display: flex;
   gap: 20px;
@@ -119,4 +120,86 @@ a:hover::after {
 }
 
 #Connect li {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Tablet */
+/* for a bit larger screens like iPads. There is more spacing and colors are more vivid */
+@media (min-width: 600px) {
+  /* Makes the headings pop a little more */
+  h1 {
+    font-size: 4.5rem;
+    color: #00ffd5;
+  }
+
+  h2,
+  h3 {
+    font-size: 2rem;
+    color: #80ffe0;
+  }
+
+  /* Makes experience items easier to read side by side */
+  #Experience ul {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  #Experience li {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  /* bigger and brighter links */
+  a {
+    font-size: 1.2rem;
+    color: #ff90c0;
+  }
+
+  #Connect ul {
+    gap: 40px;
+  }
+
+  #Connect li {
+    font-size: 1.2rem;
+  }
+}
+
+/* Desktop Styles */
+/* larger screens like laptops and desktops */
+@media (min-width: 1024px) {
+  /* headings are aligned left and font is larger */
+  h1 {
+    font-size: 5.5rem;
+    text-align: left;
+  }
+
+  h2,
+  h3 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  /* experience */
+  #Experience ul {
+    gap: 30px;
+  }
+
+  #Experience li {
+    flex-direction: column;
+    padding: 25px;
+    background: rgba(
+      40,
+      40,
+      60,
+      0.8
+    ); /* has darker background for more emphasis */
+  }
+
+  /* profile pic is larger */
+  .Profile-pic {
+    width: 200px;
+    height: 200px;
+    margin: 40px auto;
+  }
 }
