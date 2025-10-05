@@ -203,3 +203,32 @@ a:hover::after {
     margin: 40px auto;
   }
 }
+section {
+  padding: 40px 20px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+#Skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  min-height: 50x;
+}
+
+#Skills li {
+  background: rgba(128, 223, 255, 0.2);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+section {
+  padding: 40px 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
