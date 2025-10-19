@@ -164,4 +164,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // calls fetch function
   fetchGitHubRepos(GITHUB_USERNAME);
+  async function fetchGitHubProfile(username) {
+    const url = `https://api.github.com/users/${encodeURIComponent(username)}`;
+    const profileSection = document.querySelector("#About");
+
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+
+      const info = document.createElement("p");
+      info.innerHTML = `
+      <strong>GitHub Followers:</strong> ${data.followers} <br>
+      <strong>Public Repos:</strong> ${data.public_repos}
+    `;
+      profileSection.appendChild(info);
+    } catch (error) {
+      console.error("Error fetching profile info:", error);
+    }
+  }
+
+  fetchGitHubProfile(GITHUB_USERNAME);
 });
